@@ -1,0 +1,260 @@
+body {
+  background: linear-gradient(to bottom, #42AACB, #A0D8A9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slam {
+  animation: slam 500ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slam
+{
+  0%
+  {
+    transform: scale(10, 10);
+    opacity: 0;
+  }
+
+  40%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes rattle
+{
+  0% { margin-top: 0; margin-left: 0; }
+  10% { margin-top: -5px; margin-left: 0; }
+  20% { margin-top: 0; margin-left: -5px; }
+  30% { margin-top: 5px; margin-left: 0; }
+  40% { margin-top: 0; margin-left: 5px; }
+  50% { margin-top: -2px; margin-left: 0; }
+  60% { margin-top: 0; margin-left: -2px; }
+  70% { margin-top: 2px; margin-left: 0; }
+  80% { margin-top: 0; margin-left: 2px; }
+  90% { margin-top: -1px; margin-left: 0; }
+  100% { margin-top: 0; margin-left: 0; }
+}
+
+.name-container {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 161px;
+  left: 50%;
+  color: #F3F3F3;
+  font-family: 'Numans', sans-serif;
+
+}
+
+.name {
+  font-size: 72px;
+  animation: rattle 0.2s;
+  animation-delay: 500ms;
+  margin: 0;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0;
+  animation: rattle 0.2s;
+  animation-delay: 500ms;
+}
+
+.right-corner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 655px 810px;
+  border-color: transparent transparent #42AACB transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+}
+
+
+.circle:hover {
+  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  width: 90px;
+  height: 90px;
+}
+
+#linkedin {
+  position: absolute;
+  bottom: -80px;
+  right: 700px;
+  background-size: cover;
+  background-color: #93CDB1;
+  background-image: url("images/linkedin.png");
+  -webkit-animation: diagonal-linkedin 1s forwards;
+  animation: diagonal-linkedin 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes diagonal-linkedin {
+  from { bottom: -80; right: 700px; }
+  to   { bottom: 108px; right: 465px; }
+}
+
+#github {
+  position: absolute;
+  bottom: -80px;
+  right: 700px;
+  background-size: cover;
+  background-color: #88C8B3;
+  background-image: url("images/github2.png");
+  -webkit-animation: diagonal-github 1s forwards;
+  animation: diagonal-github 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes diagonal-github {
+  from { bottom: -80; right: 700px; }
+  to   { bottom: 195px; right: 355px; }
+}
+
+#codewars {
+  position: absolute;
+  bottom: -80px;
+  right: 700px;
+  background-size: cover;
+  background-color: #73BEBA;
+  background-image: url("images/codewars.png");
+  -webkit-animation: diagonal-codewars 1s forwards;
+  animation: diagonal-codewars 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes diagonal-codewars {
+  from { bottom: -80; right: 700px; }
+  to   { bottom: 374px; right: 138px; }
+}
+
+#resume {
+  position: absolute;
+  bottom: -80px;
+  right: 700px;
+  background-size: cover;
+  background-color: #7FC4B7;
+  background-image: url("images/resume-icon.png");
+  -webkit-animation: diagonal-resume 1s forwards;
+  animation: diagonal-resume 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes diagonal-resume {
+  from { bottom: -80; right: 700px; }
+  to   { bottom: 282px; right: 246px; }
+}
+
+
+@media screen and (max-width: 768px) {
+  .right-corner {
+    width: 116vh;
+    height: 250px;
+    border: none;
+    background-color: #42AACB;
+  }
+
+  #linkedin {
+    position: absolute;
+    bottom: 22%;
+    right: 63%;
+    background-size: cover;
+    background-color: #93CDB1;
+    background-image: url("images/linkedin.png");
+    animation: none;
+    animation-delay: 1s;
+  }
+
+  #github {
+    position: absolute;
+    bottom: 22%;
+    right: 21%;
+    background-size: cover;
+    background-color: #88C8B3;
+    background-image: url("images/github2.png");
+    animation: none;
+    animation-delay: 1s;
+  }
+
+  #resume {
+    position: absolute;
+    bottom: 7%;
+    right: 63%;
+    background-size: cover;
+    background-color: #7FC4B7;
+    background-image: url("images/resume-icon.png");
+    animation: none;
+    animation-delay: 1s;
+  }
+
+
+  #codewars {
+    position: absolute;
+    bottom: 7%;
+    right: 21%;
+    background-size: cover;
+    background-color: #73BEBA;
+    background-image: url("images/codewars.png");
+    animation: none;
+    animation-delay: 1s;
+  }
+
+}
+
+
+
+
+
+
+
+
+/*
+
+.typewriter {
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.typewriter:hover {
+  margin-left: 50px;
+  font-size: 15px;
+  overflow: hidden;  Ensures the content is not revealed until the animation
+  white-space: nowrap;  Keeps the content on a single line
+  letter-spacing: .15em; /* Adjust as needed
+  animation:
+    typing 7.5s steps(1500, end);
+  animation-delay: 2s;
+}*/
+
+/* The typing effect */
+/*
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}*/
+
