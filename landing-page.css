@@ -175,7 +175,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .right-corner {
-    width: 116vh;
+    position: fixed;
+    width: 100vw;
     height: 100px;
     border: none;
     background-color: #4DAAC7;
@@ -184,7 +185,7 @@ body {
   #linkedin {
     position: absolute;
     bottom: 0;
-    left: 2%;
+    left: 0%;
     background-size: cover;
     background-color: #4DAAC7;
     background-image: url("images/linkedin2.png");
@@ -218,7 +219,7 @@ body {
   #codewars {
     position: absolute;
     bottom: 0;
-    right: 2%;
+    right: 0%;
     background-size: cover;
     background-color: #4DAAC7;
     background-image: url("images/codewars2.png");
