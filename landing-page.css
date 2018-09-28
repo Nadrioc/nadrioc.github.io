@@ -194,7 +194,7 @@ body {
   }
 
   #linkedin {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0%;
     background-size: cover;
@@ -205,7 +205,7 @@ body {
   }
 
   #github {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 55%;
     background-size: cover;
@@ -216,7 +216,7 @@ body {
   }
 
   #resume {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 28%;
     background-size: cover;
@@ -228,7 +228,7 @@ body {
 
 
   #codewars {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0%;
     background-size: cover;
