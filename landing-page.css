@@ -49,7 +49,7 @@ body {
 .name-container {
   position: absolute;
   transform: translateX(-50%);
-  top: 161px;
+  top: 10%;
   left: 50%;
   color: #F3F3F3;
   font-family: 'Numans', sans-serif;
@@ -71,6 +71,17 @@ body {
   animation: rattle 0.2s;
   animation-delay: 500ms;
 }
+
+
+@media (max-height: 530px){
+  .name {
+    font-size: 60px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+
 
 .right-corner {
   width: 0;
